@@ -1,0 +1,220 @@
+/* reset css  */
+*, html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #7da0ca;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Navbar */
+header.navbar-container {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+
+  margin-top: 1rem;
+  width: 100vw;
+   max-width: 1300px;
+  padding: 1rem;
+  margin-inline: auto;
+  padding-block: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.navbar-container .nav-list ul {
+  list-style: none;
+
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: black;
+
+  padding: 0.5rem 1.5rem;
+
+  /* saat pertama kali spawn */
+  transition: all 0.5s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #052659;
+  color: white;
+
+  transition: 0.2s all ease-in;
+  border-radius: 25px;
+}
+header .menu{
+  display: none;
+  position: relative;
+  left: 0;
+  top: 1.2rem;
+  font-size: 1.6rem;
+
+}
+
+/* Isi Content*/
+main {
+  flex: 1;
+
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 2.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+main .cotent .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  margin-block: 1.2rem;
+
+  font-size: 2.2rem;
+}
+main .content .content-description p {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-right: 3.5rem;
+}
+main aside .content .content-image {
+  flex: 1;
+
+  display: flex;
+}
+
+main aside .content .content-image img {
+  margin: auto;
+}
+
+/* Link Content */
+main section {
+  position: absolute;
+  inset-inline-start: 1rem;
+  bottom: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main section .sosial-media {
+  height: 100%;
+  display: flex;
+justify-content: center;
+}
+
+main section .sosial-media ul {
+  padding: 1.2rem;
+  border-radius: 25px;
+  margin: 0.2rem;
+  background-color: #052659;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main section .sosial-media li {
+  list-style-type: none;
+}
+
+main section .sosial-media li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #f9f9f9;
+
+  transition: all 0.1s ease-in-out;
+}
+
+main section .sosial-media li a:hover {
+  color: #548383;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .content-footer {
+  background-color: #f7f7f7;
+  font-size: 1.4rem;
+  
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 1200px;
+  margin: 1rem;
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+}
+
+ @media screen and (max-width: 768px) {
+   nav ul li {
+    display: none;
+  }
+
+ header.navbar-container{
+    border-radius: 0;
+    margin-top: 0;
+    padding: 2rem;
+  }
+
+   nav .menu{
+    position: absolute;
+    cursor: pointer;
+
+
+    display: flex;
+    left: 1rem;
+    justify-items: end;
+    align-items: flex-end;
+  }
+   
+  .content{
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column ;
+ }
+
